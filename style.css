@@ -1,3 +1,49 @@
+html{
+  background-color: #000000;
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='100%25' height='100%25' viewBox='0 0 1600 800'%3E%3Cg %3E%3Cpolygon fill='%23220000' points='1600 160 0 460 0 350 1600 50'/%3E%3Cpolygon fill='%23440000' points='1600 260 0 560 0 450 1600 150'/%3E%3Cpolygon fill='%23660000' points='1600 360 0 660 0 550 1600 250'/%3E%3Cpolygon fill='%23880000' points='1600 460 0 760 0 650 1600 350'/%3E%3Cpolygon fill='%23A00' points='1600 800 0 800 0 750 1600 450'/%3E%3C/g%3E%3C/svg%3E");
+  background-attachment: fixed;
+  background-size: cover;
+}
+
+body{
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  grid-template-rows: auto;
+  grid-template-areas: 
+  "headlogo header"
+  "navbar main"
+  "footer footer";
+}
+
+.headlogo{
+  grid-area: headlogo;
+  grid-column: 1 / 2;
+}
+
+header{
+  grid-area: header;
+  grid-column: 2 / 3;
+}
+
+nav{
+  grid-area: navbar;
+  grid-column: 1 / 2;
+  display: flex;
+  flex-direction: column;
+}
+
+main{
+  grid-area: main;
+  grid-column: 2 / 3;
+  display: flex;
+  flex-direction: column;
+}
+
+img{
+  width: 300px;
+  height: 300px;
+}
+
 ul {
   list-style-type: none;
   margin: auto;
@@ -5,6 +51,11 @@ ul {
   color: black;
 }
 
+header{
+  text-align: center;
+  font-family: monospace, sans-serif, 'Franklin Gothic Medium';
+  color: red;
+}
 
 li a {
   display: block;
@@ -15,24 +66,22 @@ li a {
   width: 100px;
   text-decoration: black;
   color: red;
+  position: sticky;
 }
 
-
 input{
-  margin-left: 4rem;
-  top: 20px;
-  float: right;
-  width: 20%;
-  padding: 10px;
-  color: white;
   font-size: 17px;
   border: 1px solid grey;
   cursor: pointer;
 }
 
-header{
-  text-align: center;
-  font-family: monospace, sans-serif, 'Franklin Gothic Medium';
-  color: red;
+footer p{
+  color: darkred;
+  font-size: medium;
+}
+
+footer{
+  grid-area: footer;
+  grid-column: 1 / 3;
 }
 
