@@ -1,0 +1,124 @@
+html{
+    background-color: #000000;
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='100%25' height='100%25' viewBox='0 0 1600 800'%3E%3Cg %3E%3Cpolygon fill='%23220000' points='1600 160 0 460 0 350 1600 50'/%3E%3Cpolygon fill='%23440000' points='1600 260 0 560 0 450 1600 150'/%3E%3Cpolygon fill='%23660000' points='1600 360 0 660 0 550 1600 250'/%3E%3Cpolygon fill='%23880000' points='1600 460 0 760 0 650 1600 350'/%3E%3Cpolygon fill='%23A00' points='1600 800 0 800 0 750 1600 450'/%3E%3C/g%3E%3C/svg%3E");
+    background-attachment: fixed;
+    background-size: cover;
+}
+
+body{
+    display: grid;
+    min-height: 100vh;
+    grid-template-columns: 1fr 3fr;
+    grid-template-rows: 50px auto;
+}
+
+header{
+    grid-area: header;
+    grid-column: 2 / 3;
+    grid-row: 1 / 2;
+    text-align: center;
+    height: fit-content;
+    font-family: 'Graduate', cursive;
+    color: red;
+    margin-left: -300px;
+}
+
+
+.testimonials{
+    border: 5px solid red;
+    color: red;
+    font-family: 'Kodchasan', sans-serif;
+}
+
+main{
+    grid-area: main;
+    grid-row: 2/ 3;
+    grid-column: 2 / 3;
+}
+
+main h2{
+    color: red;
+    text-align: center;
+    margin-left: -300px;
+    font-family: 'Kodchasan', sans-serif;
+}
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    height: fit-content;
+}
+
+.headlogo img{
+    grid-area: headlogo;
+    grid-column: 1 / 2;
+    grid-row: 1 / 1;
+    width: 50px;
+    height: 50px;
+}
+
+
+nav{
+    grid-area: navbar;
+    grid-column: 1 / 1;
+    display: flex;
+    flex-direction: column;
+    grid-row: 2 / 2;
+    width: 200px;
+    height: 200px;
+    margin-top: -50px;
+}
+
+img{
+    width: 300px;
+    height: 300px;
+    border-radius: 50px;
+}
+
+ul{
+    list-style-type: none;
+    margin: auto;
+    padding: 0;
+    color: black;
+}
+
+li a{
+    display: block;
+    top: 20px;
+    font-size: 20px;
+    margin-right: 100px;
+    padding-right: auto;
+    width: 200px;
+    text-decoration: black;
+    color: white;
+    position: sticky;
+    grid-column: 2 / 2;
+    grid-row: 1 / 2;
+
+}
+li a:hover{
+    color: red;
+}
+
+footer p{
+    color: black;
+}
+
+footer{
+    grid-area: footer;
+    grid-column: 1/4;
+}
+
+input{
+    height: 20px;
+}
+
+.Products{
+    color:  white;
+    border: 5px solid red;
+    display: flex;
+    flex-wrap: wrap;
+    margin: 10px;
+}
+
