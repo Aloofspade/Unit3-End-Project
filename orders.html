@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Orders</title>
+    <link rel='stylesheet' href='orders.css'>
+    <link rel='shortcut icon' href='images/Icon.jpg' type='image/x-icon'>
+</head>
+<body>
+    <div class="headlogo">
+        <img src="images/Logo.jpg" alt="Headlogo" width="100" height="100">
+    </div>
+
+    <header>
+        <h1>Show Off Soccer!</h1>
+    </header>
+    <nav>
+       
+        <ul> 
+            <li><a href="index.html" type="page">Home</a></li>
+             
+            <li><a href="gallery.html">Gallery</a></li>
+            <li><a href="#Services/Products">Services/Products</a></li>
+            <li><a href="orders.html">Orders</a></li>
+        </ul>
+        </nav>
+<main>
+    <h2>Styles</h2>
+<label class="container" class="Jersey">Jerseys<price class="price">$80</price>
+  <input type="checkbox" checked="checked">
+  <span class="checkmark"></span>
+</label>
+
+
+
+<label class="container">Cleats<price class="price">$60</price>
+  <input type="checkbox">
+  <span class="checkmark"></span>
+</label>
+<label class="container">NikeBall<price class="price">$30</price>
+  <input type="checkbox">
+  <span class="checkmark"></span>
+</label>
+<label class="container">ShinGuards<price class="price">$20</price>
+  <label class="container">
+    <br>
+  <input type="checkbox">
+  <span class="checkmark"></span>
+</label>
+</main>
+            
+
+              <form action="index.html" method="POST">
+                <fieldset>
+                  
+                  <h3>Billing Address</h3>
+                  <ul>
+                      <li>
+                          <label for="name">Name:</label>
+                          <input type="text" name="user.name" id="name">
+                      </li>
+                      <li>
+                          <label for="mail">E-mail:</label>
+                          <input type="email" id="mail" name="user.mail">
+                      </li>
+                      <li>
+                          <label for="Add">Address:</label>
+                          <textarea name="user.Address" id="Address"></textarea>
+                      </li>
+                      <li>
+                        <label for="City">City:</label>
+                        <textarea name="user.City" id="City"></textarea>
+                    </li>
+                      <li>
+                        <label for="Zip">Zip:</label>
+                        <textarea name="user.Zip" id="Zip"></textarea>
+                    </li>
+                      <li>
+                        <label for="State">State:</label>
+                        <textarea name="user.State" id="State"></textarea>
+                    </li>
+                      <li>
+                           <button type="submit">Submit</button>
+                      </li>
+                  </ul>
+
+                  
+          
+                </fieldset>
+              </form>
+
+</body>
+</html>
